@@ -1,0 +1,18 @@
+.l-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.l-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@media (min-width: 768px) {
+    .l-grid {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}

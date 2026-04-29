@@ -1,18 +1,28 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Esporte Saude - Assessoria Esportiva</title>
-    <link rel="stylesheet" href="style.css">
+    <title>SportLife - Assessoria Esportiva</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/variaveis.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    
+    <link rel="stylesheet" href="css/components/banner-principal.css">
+    <link rel="stylesheet" href="css/components/card.css">
 </head>
 <body>
 
-    <header class="main-header">
-        <div class="container header-container">
-            <div class="logo">Esporte<span>Saude</span></div>
-            <nav>
-                <ul class="nav-menu">
+    <header class="l-header">
+        <div class="l-container header-flex">
+            <div class="logo">Sport<span>Life</span></div>
+            <nav aria-label="Navegação principal">
+                <ul class="nav-links">
                     <li><a href="#inicio">Início</a></li>
                     <li><a href="#servicos">Serviços</a></li>
                     <li><a href="#contato">Contato</a></li>
@@ -22,33 +32,43 @@
     </header>
 
     <main>
-        <section id="inicio" class="hero">
-            <div class="container">
-                <h1>Sua melhor performance começa aqui</h1>
-                <p>Planilhas de treino personalizadas para corrida e fortalecimento.</p>
-                <a href="#contato" class="btn">Quero começar</a>
+        <section id="inicio" class="banner-principal">
+            <div class="l-container">
+                <h1 class="banner-principal__titulo">Sua melhor performance começa aqui</h1>
+                <p class="banner-principal__descricao">
+                    Planilhas de treino personalizadas para corrida e fortalecimento físico 
+                    focadas no seu pace e na prevenção de lesões.
+                </p>
+                <a href="#servicos" class="banner-principal__botao">Quero começar</a>
             </div>
         </section>
 
-        <section id="servicos" class="services container">
-            <article class="card">
-                <h3>Corrida</h3>
-                <p>Evolução de pace e resistência.</p>
-            </article>
-            <article class="card">
-                <h3>Fortalecimento</h3>
-                <p>Prevenção de lesões e potência.</p>
-            </article>
-            <article class="card">
-                <h3>Consultoria</h3>
-                <p>Acompanhamento online via app.</p>
-            </article>
+        <section id="servicos" class="l-container section-padding">
+            <h2 class="section-title">Nossos Serviços</h2>
+            
+            <div class="l-grid">
+                <article class="card">
+                    <h3 class="card__title">Corrida de Rua</h3>
+                    <p class="card__desc">Evolução constante de pace e resistência para todas as distâncias.</p>
+                </article>
+
+                <article class="card">
+                    <h3 class="card__title">Fortalecimento</h3>
+                    <p class="card__desc">Treinos específicos para ganhar potência e evitar lesões comuns.</p>
+                </article>
+
+                <article class="card">
+                    <h3 class="card__title">Consultoria Online</h3>
+                    <p class="card__desc">Acompanhamento individualizado de onde você estiver via aplicativo.</p>
+                </article>
+            </div>
         </section>
     </main>
 
-    <footer class="main-footer">
-        <div class="container">
-            <p>&copy; 2026 Esporte Saude - Projeto Aplicações para Internet</p>
+    <footer id="contato" class="l-footer">
+        <div class="l-container">
+            <p>&copy; 2026 SportLife - Desenvolvido por Italo Cassio</p>
+            <p>Disciplina: Aplicações para Internet | Engenharia de Interface</p>
         </div>
     </footer>
 

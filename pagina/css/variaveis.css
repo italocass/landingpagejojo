@@ -1,0 +1,33 @@
+:root {
+    /* Fontes do projeto */
+    --font-heading: 'Poppins', system-ui, sans-serif;
+    --font-body: 'Inter', system-ui, sans-serif;
+
+    /* Tamanhos das letras */
+    --font-xs:   0.640rem; 
+    --font-sm:   0.800rem; 
+    --font-base: 1.000rem; 
+    --font-md:   1.250rem; 
+    --font-lg:   1.563rem; 
+    --font-xl:   1.953rem; 
+    --font-2xl:  2.441rem; 
+    --font-3xl:  3.052rem; 
+
+    /* Espessura (Fino, Normal, Negrito) */
+    --weight-regular: 400;
+    --weight-medium:  500;
+    --weight-bold:    700;
+
+    /* Altura das linhas (Espaçamento) */
+    --leading-tight:  1.2; 
+    --leading-normal: 1.5; 
+    --leading-loose:  1.8; 
+
+    /* Cores principais */
+    --color-primary-500: #2E75B6;
+    --color-bg-primary: #FFFFFF;
+    --color-bg-secondary: #F3F4F6;
+    --color-text-primary: #111827;
+    --color-text-secondary: #6B7280;
+    --color-border: #D1D5DB;
+}

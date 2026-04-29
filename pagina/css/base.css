@@ -1,0 +1,19 @@
+/* Configuração padrão do site inteiro */
+body {
+    font-family: var(--font-body);
+    font-size: var(--font-base);
+    line-height: var(--leading-normal);
+    color: var(--color-text-primary);
+    background-color: var(--color-bg-primary);
+    -webkit-font-smoothing: antialiased; 
+}
+
+/* Configuração dos títulos */
+h1, h2, h3 { 
+    font-family: var(--font-heading); 
+    line-height: var(--leading-tight);
+}
+
+h1 { font-size: var(--font-3xl); }
+h2 { font-size: var(--font-xl); }
+h3 { font-size: var(--font-lg); }

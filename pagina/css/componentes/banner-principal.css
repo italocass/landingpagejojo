@@ -1,0 +1,45 @@
+/* Componente: Banner Principal (Hero Section) */
+/* Seguindo Padrão BEM: Bloco (__Elemento) (--Modificador) */
+
+/* BLOCO */
+.banner-principal {
+    background-color: var(--color-bg-secondary); /* Usa a cor de fundo secundária para dar destaque */
+    padding: 80px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+}
+
+/* ELEMENTOS FILHOS (Separados por dois underlines __ ) */
+.banner-principal__titulo {
+    font-size: var(--font-3xl); /* Puxando o maior tamanho da escala Major Third */
+    color: var(--color-primary-500); /* Cor primária da marca */
+    margin-bottom: 20px;
+    line-height: var(--leading-tight);
+}
+
+.banner-principal__descricao {
+    font-size: var(--font-md);
+    color: var(--color-text-secondary);
+    max-width: 600px;
+    margin-bottom: 30px;
+}
+
+.banner-principal__botao {
+    display: inline-block;
+    background-color: var(--color-primary-500);
+    color: var(--color-bg-primary); /* Texto branco no botão */
+    padding: 15px 35px;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+/* Estado de Hover (Quando passa o mouse) */
+.banner-principal__botao:hover {
+    background-color: var(--color-primary-700); /* Fica mais escuro */
+}
