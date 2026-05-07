@@ -1,76 +1,97 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SportLife - Assessoria Esportiva</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@700&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/variaveis.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/layout.css">
-    
-    <link rel="stylesheet" href="css/components/banner-principal.css">
+    <link rel="stylesheet" href="css/components/navbar.css">
     <link rel="stylesheet" href="css/components/card.css">
+    <link rel="stylesheet" href="css/components/footer.css">
+    <link rel="stylesheet" href="css/components/btn.css">
+    <link rel="stylesheet" href="css/utilities.css">
 </head>
 <body>
 
-    <header class="l-header">
-        <div class="l-container header-flex">
-            <div class="logo">Sport<span>Life</span></div>
-            <nav aria-label="Navegação principal">
-                <ul class="nav-links">
-                    <li><a href="#inicio">Início</a></li>
-                    <li><a href="#servicos">Serviços</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
-            </nav>
-        </div>
+    <header class="header">
+        <nav class="navbar">
+            <a href="#" class="navbar__logo">SportLife</a>
+            
+            <button class="navbar__hamburger" aria-label="Abrir menu">
+                <span class="navbar__hamburger-line"></span>
+                <span class="navbar__hamburger-line"></span>
+                <span class="navbar__hamburger-line"></span>
+            </button>
+            
+            <ul class="navbar__menu">
+                <li class="navbar__item"><a href="#inicio" class="navbar__link">Início</a></li>
+                <li class="navbar__item"><a href="#servicos" class="navbar__link">Serviços</a></li>
+                <li class="navbar__item"><a href="#contato" class="navbar__link">Contato</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main>
-        <section id="inicio" class="banner-principal">
-            <div class="l-container">
-                <h1 class="banner-principal__titulo">Sua melhor performance começa aqui</h1>
-                <p class="banner-principal__descricao">
-                    Planilhas de treino personalizadas para corrida e fortalecimento físico 
-                    focadas no seu pace e na prevenção de lesões.
-                </p>
-                <a href="#servicos" class="banner-principal__botao">Quero começar</a>
-            </div>
-        </section>
-
-        <section id="servicos" class="l-container section-padding">
-            <h2 class="section-title">Nossos Serviços</h2>
+    <main class="main">
+        <section id="servicos" class="section l-container">
+            <h2 class="section__title">Nossos Serviços</h2>
             
-            <div class="l-grid">
+            <div class="cards-grid">
+                <article class="card card--featured">
+                    <h3 class="card__title">Consultoria Premium</h3>
+                    <p class="card__text">Acompanhamento completo com planilhas semanais, análise de biomecânica e ajustes de treino.</p>
+                    <a href="#" class="btn btn--primary">Saber mais</a>
+                </article>
+
                 <article class="card">
-                    <h3 class="card__title">Corrida de Rua</h3>
-                    <p class="card__desc">Evolução constante de pace e resistência para todas as distâncias.</p>
+                    <h3 class="card__title">Corrida</h3>
+                    <p class="card__text">Treinos focados em evolução de pace e ganho de resistência aeróbica.</p>
+                    <a href="#" class="btn btn--outline">Ver planos</a>
                 </article>
 
                 <article class="card">
                     <h3 class="card__title">Fortalecimento</h3>
-                    <p class="card__desc">Treinos específicos para ganhar potência e evitar lesões comuns.</p>
+                    <p class="card__text">Foco na prevenção de lesões e preparação muscular para o esporte.</p>
+                    <a href="#" class="btn btn--outline">Ver planos</a>
                 </article>
 
                 <article class="card">
-                    <h3 class="card__title">Consultoria Online</h3>
-                    <p class="card__desc">Acompanhamento individualizado de onde você estiver via aplicativo.</p>
+                    <h3 class="card__title">Recuperação</h3>
+                    <p class="card__text">Sessões voltadas para mobilidade e liberação miofascial.</p>
+                    <a href="#" class="btn btn--outline">Ver planos</a>
                 </article>
             </div>
         </section>
     </main>
 
-    <footer id="contato" class="l-footer">
-        <div class="l-container">
-            <p>&copy; 2026 SportLife - Desenvolvido por Italo Cassio</p>
-            <p>Disciplina: Aplicações para Internet | Engenharia de Interface</p>
+    <footer class="footer">
+        <div class="footer__grid l-container">
+            <div class="footer__col">
+                <h4 class="footer__title">SportLife</h4>
+                <p class="footer__text">Sua melhor performance começa aqui.</p>
+            </div>
+            <div class="footer__col">
+                <h4 class="footer__title">Links</h4>
+                <a href="#inicio" class="footer__link">Início</a>
+                <a href="#servicos" class="footer__link">Serviços</a>
+            </div>
+            <div class="footer__col">
+                <h4 class="footer__title">Contato</h4>
+                <p class="footer__text">contato@sportlife.com</p>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>&copy; <span class="footer__year"></span> SportLife. Todos os direitos reservados.</p>
         </div>
     </footer>
 
+    <script src="js/main.js"></script>
 </body>
 </html>

@@ -1,7 +1,6 @@
 /* Componente: Banner Principal (Hero Section) */
 /* Seguindo Padrão BEM: Bloco (__Elemento) (--Modificador) */
 
-/* BLOCO */
 .banner-principal {
     background-color: var(--color-bg-secondary); /* Usa a cor de fundo secundária para dar destaque */
     padding: 80px 20px;
