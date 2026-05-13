@@ -1,0 +1,21 @@
+/* tokens/semantic.css */
+:root {
+  /* Marca e Ações */
+  --color-primary: var(--_blue-500);
+  --color-primary-hover: var(--_blue-700);
+  
+  /* Fundos e Superfícies */
+  --color-bg-primary: var(--_white);
+  --color-bg-secondary: var(--_gray-100);
+  
+  /* Tipografia */
+  --color-text-primary: var(--_gray-900);
+  --color-text-secondary: var(--_gray-600);
+  
+  /* Elementos */
+  --color-border: var(--_gray-300);
+  
+  /* Rodapé isolado */
+  --color-footer-bg: var(--_gray-900);
+  --color-footer-text: var(--_gray-400);
+}

@@ -1,0 +1,26 @@
+/* tokens/typography.css */
+:root {
+  /* Famílias */
+  --font-heading: 'Poppins', system-ui, sans-serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+
+  /* Tamanhos (Escala Modular) */
+  --font-xs:   0.640rem; 
+  --font-sm:   0.800rem; 
+  --font-base: 1.000rem; 
+  --font-md:   1.250rem; 
+  --font-lg:   1.563rem; 
+  --font-xl:   1.953rem; 
+  --font-2xl:  2.441rem; 
+  --font-3xl:  3.052rem; 
+
+  /* Pesos */
+  --weight-regular: 400;
+  --weight-medium:  500;
+  --weight-bold:    700;
+
+  /* Altura das linhas */
+  --leading-tight:  1.2; 
+  --leading-normal: 1.5; 
+  --leading-loose:  1.8; 
+}

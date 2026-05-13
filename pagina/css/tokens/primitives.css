@@ -1,0 +1,12 @@
+/* tokens/primitives.css */
+:root {
+  /* Cores Base (A Paleta bruta do projeto) */
+  --_blue-500: #2E75B6;
+  --_blue-700: #1F5B94;
+  --_white: #FFFFFF;
+  --_gray-100: #F3F4F6;
+  --_gray-300: #D1D5DB;
+  --_gray-400: #9CA3AF;
+  --_gray-600: #4B5563;
+  --_gray-900: #111827;
+}

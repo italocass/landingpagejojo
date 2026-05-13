@@ -1,0 +1,15 @@
+/* tokens/spacing.css */
+:root {
+  /* Escala de Espaçamento (Múltiplos de 4px) */
+  --space-1: 4px;   /* xs */
+  --space-2: 8px;   /* sm */
+  --space-4: 16px;  /* md */
+  --space-6: 24px;  /* lg */
+  --space-8: 32px;  /* xl */
+  --space-16: 64px; /* xxl */
+
+  /* Raio de Borda (Border Radius) */
+  --radius-sm: var(--space-1);
+  --radius-md: var(--space-2);
+  --radius-lg: var(--space-4);
+}
