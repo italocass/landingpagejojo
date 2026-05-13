@@ -1,0 +1,54 @@
+:root {
+    /* ============================================================
+       IDENTIDADE VISUAL (CORES)
+       ============================================================ */
+
+    /* Marca Principal */
+    --color-primary: #2E75B6;        /* Azul SportLife: Usado em Logos e Botões */
+    --color-primary-hover: #1F5B94;  /* Azul Escuro: Usado no efeito de passar o mouse */
+    
+    /* Superfícies e Fundos */
+    --color-bg-primary: #FFFFFF;     /* Branco: Fundo da Navbar e dos Cards */
+    --color-bg-secondary: #F3F4F6;   /* Cinza Gelo: Fundo da página para dar contraste */
+    
+    /* Tipografia (Cores do texto) */
+    --color-text-primary: #111827;   /* Preto Azulado: Títulos e Links principais */
+    --color-text-secondary: #4B5563; /* Cinza Médio: Parágrafos e textos auxiliares */
+    
+    /* Elementos de UI */
+    --color-border: #D1D5DB;         /* Cinza Borda: Linhas sutis de separação e cards */
+    --color-footer-bg: #111827;      /* Fundo do Rodapé (Estilo Dark) */
+    --color-footer-text: #9CA3AF;    /* Texto do Rodapé (Contraste para fundo escuro) */
+    
+    /* Fontes do projeto */
+    --font-heading: 'Poppins', system-ui, sans-serif;
+    --font-body: 'Inter', system-ui, sans-serif;
+
+    /* Modular Scale (Tamanhos das letras) */
+    --font-xs:   0.640rem; 
+    --font-sm:   0.800rem; 
+    --font-base: 1.000rem; 
+    --font-md:   1.250rem; 
+    --font-lg:   1.563rem; 
+    --font-xl:   1.953rem; 
+    --font-2xl:  2.441rem; 
+    --font-3xl:  3.052rem; 
+
+    /* Espessura (Pesos) */
+    --weight-regular: 400;
+    --weight-medium:  500;
+    --weight-bold:    700;
+
+    /* Altura das linhas (Espaçamento vertical) */
+    --leading-tight:  1.2; 
+    --leading-normal: 1.5; 
+    --leading-loose:  1.8; 
+
+    /* LAYOUT E BORDAS*/
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 16px;
+    
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+}
