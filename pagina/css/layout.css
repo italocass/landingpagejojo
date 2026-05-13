@@ -1,18 +1,35 @@
 .l-container {
-    width: 90%;
+    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 var(--spacing-lg);
 }
 
-.l-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.section {
+    padding: var(--spacing-xxl) 0;
+}
+
+.section__title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: var(--spacing-xl);
+}
+
+/* Grid ponto central do layout  */
+.cards-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Mobile: 1 coluna */
+    gap: var(--spacing-xl);
 }
 
 @media (min-width: 768px) {
-    .l-grid {
-        flex-direction: row;
-        flex-wrap: wrap;
+    .cards-grid {
+        grid-template-columns: repeat(2, 1fr); /* Tablet: 2 colunas */
+    }
+}
+
+@media (min-width: 1200px) {
+    .cards-grid {
+        grid-template-columns: repeat(3, 1fr); /* Desktop: 3 colunas */
     }
 }

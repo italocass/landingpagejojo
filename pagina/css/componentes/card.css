@@ -1,17 +1,45 @@
 .card {
-    padding: 30px;
-    border: 1px solid var(--color-border);
-    border-radius: 8px;
-    flex: 1;
     background-color: var(--color-bg-primary);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: var(--spacing-lg);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
 
 .card__title {
-    font-size: var(--font-xl);
-    margin-bottom: 15px;
-    color: var(--color-primary-500);
+    font-size: 1.25rem;
+    color: var(--color-primary);
 }
 
-.card__desc {
+.card__text {
     color: var(--color-text-secondary);
+    margin-bottom: var(--spacing-lg);
+    flex-grow: 1; /* Empurra o botão pro final */
+}
+
+/* Variante: Card em destaque ocupando 2 colunas no Desktop */
+@media (min-width: 1200px) {
+    .card--featured {
+        grid-column: span 2;
+        background-color: var(--color-primary);
+        color: var(--color-bg-primary);
+    }
+
+    .card--featured .card__title, 
+    .card--featured .card__text {
+        color: var(--color-bg-primary);
+    }
+    
+    .card--featured .btn {
+        background-color: var(--color-bg-primary);
+        color: var(--color-primary);
+    }
 }
